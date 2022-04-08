@@ -1,0 +1,532 @@
+
+/* index */
+
+.navbar{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: rgb(247, 9, 9)
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+ 
+}
+
+.navegacion {
+   background-color: rgb(39, 39, 39);
+   padding: 0.1px; 
+}
+
+.alinearportada {
+    display: flex;
+    justify-content: center;
+}
+
+.fondo {
+    background-color: black;
+}
+
+.flyer{
+       margin-top: 25px;
+       margin-right: 200px;
+       margin-left: 270px;
+;
+}
+
+li a:hover{
+    color: rgb(99, 199, 238);
+}
+
+body{font-family: 'Archivo Black', sans-serif;
+
+}
+ 
+.menu li {display: inline-block
+    
+}
+
+footer{
+    background-color: rgb(26, 25, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(251, 253, 253)
+    
+}
+.copy{
+    color: rgb(250, 248, 246);
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+  
+
+
+
+/* index grid */
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 100px 500px 500px 150px;
+
+
+    grid-template-areas:
+    "titulo titulo titulo"
+    " nav nav nav"
+    " section section section"
+    "parrafo parrafo parrafo"
+    "footer footer footer"    
+    ;
+
+}
+
+.navbar {
+    grid-area: titulo;
+}
+.navegacion {
+    grid-area: nav;
+
+}
+.inicio {
+    grid-area: section;
+}
+.serv {
+    grid-area: parrafo;
+}
+.footer {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+/*  biografia */
+
+
+.navbar2{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 44, 9);
+}
+
+.menu li a {display: inline-block;
+}
+
+.alinearportada {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(250, 3, 3);
+}
+
+.fondobio {
+    background-color: black;
+
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.bio__titulo {
+    background-color: rgb(34, 34, 34);
+
+}
+
+.bio__parrafo {
+    background-color: rgb(37, 37, 37);
+    width: 800px;
+    height: 300px;
+    padding: 30px;
+
+    margin-top: 25px;
+    margin-right: 200px;
+    margin-left: 200px;
+
+    border-top: solid 5px red;
+    border-bottom: solid 5px red;
+    border-left: solid 5px red;
+    border-right: solid 5px red;
+}
+
+
+/* bio grids */
+
+.contenedorbio {
+    display: grid;
+
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 150px 300px 500px 100
+    px 150px;
+
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "nav nav nav"
+        "portada portada portada"
+        "video video video"
+        "foto foto foto"
+        "footer footer footer"
+    ;
+
+}
+
+.navbar2 {
+    grid-area: titulo;
+
+}
+
+.navegacionbio {
+    grid-area: nav;
+}
+
+.imagenportada {
+    grid-area: portada;
+}
+
+.bio {
+    grid-area: video;
+}
+
+.footerbio {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+/* bio media query */
+
+/* tamaño tablet */
+
+@media screen and (max-width: 768px) {
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* galeria */
+
+.contenedorgaleria {
+    background-color: black;
+}
+
+
+.navbar3{
+    background-color: rgb(8, 8, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(245, 4, 4);
+}
+
+menu li a {
+    display: inline-block;
+}
+
+.alinearportada {
+    display: flex;
+    justify-content: center;
+}
+
+.titulogaleria{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.videos {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+.videos {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* galeria grids */
+
+.contenedorgaleria {
+    display: grid;
+
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 150px 300px 500px 500px 150px;
+
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "nav nav nav"
+        "portada portada portada"
+        "video video video"
+        "foto foto foto"
+        "footer footer footer"
+    ;
+
+}
+
+.navbar3 {
+    grid-area: titulo;
+}
+    
+.navegacion {
+    grid-area: nav;
+}
+
+.alinearportada {
+    grid-area: portada;
+}
+
+.videos {
+    grid-area: video;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.footergaleria {
+    grid-area: footer;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* galeria media query */
+
+
+
+
+@media screen and (max-width:768px) {
+    body {
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 150px 150px 300px 500px 500px 150px;
+
+    grid-template-areas: 
+        "titulo titulo"
+        "nav nav"
+        "portada portada"
+        "video video"
+        "foto foto"
+        "footer footer"
+    ;
+    background-color: darkorchid;
+    }
+
+.alinearportada{
+    justify-content: center;
+    width: 200px;
+
+}
+
+
+
+    
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        grid-template-columns: 400px;
+        grid-template-rows: 100px 100px 150px 200px 200px 100px;
+    
+        grid-template-areas: 
+            "titulo"
+            "nav"
+            "portada"
+            "video"
+            "foto"
+            "footer"
+        ;
+        background-color: darkorange;
+        }
+
+    
+}
+
+
+
+
+
+
+
+
+
+/* musica */
+
+
+.navbar4{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(247, 6, 6);
+}
+
+menu li a {
+    display: inline-block;
+}
+
+.alinearportada {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedormusica {
+    background-color: black;
+}
+
+/* musica grids */
+
+
+
+
+.contenedormusica {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 100px 500px 100
+    px 150px;
+
+
+    grid-template-areas:
+    "titulo titulo titulo"
+    " nav nav nav"
+    " section section section"
+    "parrafo parrafo parrafo"
+    "footer footer footer"    
+    ;
+
+}
+
+.navbar4 {
+    grid-area: titulo;
+}
+.navegacionmusica {
+    grid-area: nav;
+
+}
+.alinearportada {
+    grid-area: section;
+}
+.musicamusica {
+    grid-area: parrafo;
+}
+.footermusica {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contacto */
+
+
+.navbar5{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(243, 7, 7);
+}
+
+
+menu li a {
+    display: inline-block;
+}
+
+.contenedorcontacto {
+    background-color: black;
+}
+
+.formulario {
+    background-color: rgb(53, 52, 52);
+}
+
+
+.mensaje {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+
+
+
+/* contacto grid */
+
+.contenedorcontacto {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 150px 300px 500px
+    px 500px
+    px 150px;
+
+
+    grid-template-areas:
+    "titulo titulo titulo"
+    " nav nav nav"
+    " section section section"
+    "parrafo parrafo parrafo"
+    "footer footer footer"    
+    ;
+
+}
+
+
+.navbar5 {
+    grid-area: titulo;
+}
+.navegacioncontacto {
+    grid-area: nav;
+
+}
+.alinearportada {
+    grid-area: section;
+}
+.formulario {
+    grid-area: parrafo;
+}
+
+.footercontacto {
+    grid-area: footer;
+}
